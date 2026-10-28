@@ -1,4 +1,24 @@
-# Cambios
+# Changelog / Cambios
+
+## 3.1.0
+
+**English**
+
+- English and Spanish interface with browser-language detection, a compact Settings selector and a saved preference.
+- Translated controls, accessible labels, progress, notifications and built-in errors. Existing queues, topic selections, filenames and backup records remain compatible.
+- Language switching during a backup, including resume and update without repeating completed files.
+- English-first GitHub README, full Spanish guide, bilingual release notes, help pages and bug-report form.
+- UI previews and an illustrated walkthrough with sample data.
+- Localized extension metadata and translation checks in CI.
+
+**Español**
+
+- Interfaz en inglés y español, detección del idioma del navegador y selector pequeño en Ajustes con elección guardada.
+- Controles, etiquetas accesibles, progreso, avisos y errores propios traducidos. Se conservan las colas, los temas elegidos, los nombres y los registros de respaldo.
+- Cambio de idioma durante el respaldo, con continuación y actualización sin repetir archivos completos.
+- Portada principal en inglés, guía completa en español, notas de versión y ayuda en ambos idiomas, y formulario de fallos bilingüe.
+- Vistas previas y recorrido ilustrado con datos de ejemplo.
+- Metadatos de la extensión traducidos y comprobaciones de traducción en CI.
 
 ## 3.0.1
 

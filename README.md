@@ -1,130 +1,149 @@
-# Telegram Downloader · Descargador de archivos de Telegram
+# Telegram Downloader · File Downloader for Chrome & Brave
 
-**Descarga un grupo completo o solo los temas que te interesan, sin guardar archivo por archivo.** Vídeos, imágenes, audios, documentos y mensajes: todo en tu PC, organizado en carpetas y con memoria de lo que ya descargaste.
+**English** · [Leer en español](README.es.md)
 
-Una extensión **gratuita y de código abierto para Brave y Chrome de escritorio**, con colas, tandas y descargas por partes en paralelo para aprovechar mejor tu conexión, también con **Telegram Premium**. Sin cuotas diarias de la extensión ni funciones de pago.
+**Download an entire Telegram group or just the topics you want — without saving every file by hand.** Keep videos, photos, audio, documents and messages on your own disk, organized by topic, with a record of what's already downloaded.
 
-**[↓ Descargar e instalar](https://github.com/jhon-a65/telegram-downloader/releases/latest)** · **[Cómo usarla](#empezar-en-brave-o-chrome)** · **[♡ Apoya al creador](https://paypal.me/jhonanthony229)**
+Free and open source. Selected video queues, configurable batches and parallel chunk downloads that work with free and **Telegram Premium** accounts. **No daily quota imposed by the extension. No paid feature unlocks.**
 
-> **Creado por Jhon Anthony y ChatGPT (Codex), una IA de OpenAI, en colaboración.** Jhon propuso la idea, definió las funciones y probó las versiones en su navegador. La IA escribió y modificó el código a partir de sus indicaciones. La publicación en GitHub y esta actualización las realiza la IA con autorización expresa de Jhon, titular de esta cuenta. Compartimos el proyecto con esta autoría visible desde el principio.
+**[↓ Download the latest release](https://github.com/jhon-a65/telegram-downloader/releases/latest)** · **[Install in 5 steps](#install-in-brave-or-chrome)** · **[♡ Support the creator](https://paypal.me/jhonanthony229)**
 
-## Menos clics. Tus archivos en orden.
+> **Created collaboratively by Jhon Anthony and ChatGPT (Codex), an AI from OpenAI.** Jhon proposed the idea, defined the features and tested versions in his browser. The AI wrote and modified the code following his instructions. **The AI publishes this project and its updates on GitHub with Jhon's explicit authorization**, using his account. We make that collaboration visible from the start.
 
-| Lo que quieres hacer | Lo que hace Telegram Downloader |
+## Fewer clicks. Your files in order.
+
+| What you want | What Telegram Downloader does |
 | --- | --- |
-| Descargar un grupo entero | Recorre el historial accesible y guarda los tipos de archivo que elijas, sin abrir cada publicación. |
-| Descargar temas específicos | Elige uno, varios o todos los temas, incluido General. Cada tema tiene su propia carpeta. |
-| Evitar descargas repetidas | Guarda un registro de progreso. Al continuar en la misma carpeta, comprueba y omite los archivos completos de esa copia. |
-| Descargar hoy y seguir otro día | Pausa o detén la descarga y continúa con los archivos pendientes, incluso después de cerrar el navegador. |
-| Actualizar tu colección | Añade los archivos que falten y, si elegiste todos los temas, incorpora los nuevos sin borrar tus copias anteriores. |
-| Elegir vídeos mientras los ves | Añádelos a Mi cola y descárgalos automáticamente en tandas de 10, 20, 40, 60, 100 o todos. |
-| Aprovechar una conexión rápida y Premium | Selecciona hasta 16 partes simultáneas por archivo, con escritura directa al disco y memoria acotada. |
-| Encontrar después lo que guardaste | Carpetas por tema y tipo, nombres por fecha e identificadores estables que distinguen archivos con nombres iguales. |
+| Download a whole group | Scans the history accessible to your account and saves the file types you choose, without opening each post. |
+| Download selected topics | Choose one, several or all forum topics, including General. Each topic gets its own folder. |
+| Skip completed downloads | Saves a progress record. When you continue in the same backup folder, completed files are checked and skipped. |
+| Continue another day | Pause or stop, close the browser and come back to pending files. An interrupted file restarts from the beginning. |
+| Keep a backup up to date | Adds missing files and, when All topics is selected, newly created topics. Existing local copies are kept. |
+| Pick videos while watching | Add them to My queue, then download batches of 10, 20, 40, 60, 100 or all selected videos. |
+| Use a fast connection and Premium | Choose up to 16 simultaneous chunks per file, with ordered writes directly to disk and bounded memory use. |
+| Find files later | Topic and file-type folders, date-based names and stable identifiers distinguish files with the same original name. |
 
-**Configura qué guardar, elige una carpeta y deja que la descarga avance sola.** No necesitas pulsar Descargar en cada archivo. El primer uso requiere instalar la extensión, abrir Telegram Web K y elegir el contenido y la carpeta; a partir de ahí, el recorrido es automático.
+**Choose what to save, select a folder and let the download run.** After the initial setup, you don't need to click Download for each file. Keep the computer, browser and Telegram tab open while it works.
 
-*English: Free Telegram Downloader extension for Chrome and Brave. Bulk-download accessible Telegram groups or selected forum topics, organize videos, photos, audio and documents by topic, resume with saved progress, and skip completed files in the same backup. Parallel chunk downloads support free and Telegram Premium accounts. Created collaboratively by Jhon Anthony and ChatGPT (Codex), and published by the AI with his permission.*
+## See the workflow
 
-## Cuatro formas de guardar
+![Illustrated workflow: choose topics, download and continue while skipping completed files](docs/walkthrough.gif)
 
-| Sección | Para qué sirve |
+*Illustrated walkthrough using the extension's UI with sample data. This is not a recording of a real Telegram account.*
+
+## English or Spanish — your choice
+
+The panel starts in Spanish for a Spanish-language browser and English for other browser languages. Open **⚙ Settings** in the top-right corner and choose **Browser default**, **English** or **Español**. Your choice is saved and can be changed while a download is running.
+
+Buttons, instructions, progress messages and the extension's own errors change language. Your queue, topic selection, progress records, existing folders and filenames stay intact. Telegram messages and topic titles keep the authors' original text. Native permission dialogs and the folder picker use the browser's own language.
+
+[English preview](docs/interface-en.png) · [Vista previa en español](docs/interface-es.png)
+
+![English interface preview with sample data](docs/interface-en.png)
+
+## Install in Brave or Chrome
+
+1. Download **Telegram-Downloader-v3.1.0.zip** from [the latest release](https://github.com/jhon-a65/telegram-downloader/releases/latest). Extract it to a permanent folder.
+2. Open `brave://extensions` or `chrome://extensions` and turn on **Developer mode**.
+3. Click **Load unpacked** and select the extracted folder that contains `manifest.json`.
+4. Open [Telegram Web K](https://web.telegram.org/k/), sign in using Telegram and reload the tab.
+5. Click **Download** in the bottom-right corner. Choose a mode, then select your destination folder when prompted.
+
+You don't need Node.js, Python, a Telegram bot or API credentials to use the extension. Queues, batches and group backups require **Web K**. Individual video downloads also support Web A. Use a current desktop version of Brave or Chrome with folder access enabled.
+
+**Updating an existing installation:** stop downloads, replace the files **in the same installation folder**, click Reload on the extension card, then refresh Telegram. Keep your backup folders and progress files. Existing queue and batch storage keys remain compatible. The archive keeps the installation folder name `Telegram-Guardar-Videos` for continuity.
+
+## Four download modes
+
+| Tab | Use it for |
 | --- | --- |
-| Vídeo abierto · azul | Guarda el vídeo que estás viendo o añádelo a Mi cola. |
-| Mi cola · violeta | Descarga solo tu selección, en tandas de 10, 20, 40, 60, 100 o todos. |
-| Grupo / tema · verde | Descarga vídeos del tema abierto o del grupo, con cantidad, orden y punto de inicio. |
-| Respaldo · ámbar | Crea y actualiza una copia del grupo con carpetas por temas y tipos de archivo. |
+| Open video · blue | Save the video you are watching or add it to My queue. |
+| My queue · purple | Download only your selected videos, in selection order, with configurable batches. |
+| Group / topic · green | Download videos from the open topic or group, with a batch count, order and starting video. |
+| Backup · amber | Create or update a group copy organized into topic and file-type folders. |
 
-La opción pequeña «Imagen» del pie guarda la imagen abierta desde sus datos locales, sin capturas de pantalla ni recompresión.
+The small **Photo** option in the footer saves the open photo from local browser data, keeping its bytes rather than taking a screenshot or recompressing it. The individual-video **Use only data already loaded** option restricts that download to data already available locally. Queues and backups request files from Telegram through your session.
 
-## Empezar en Brave o Chrome
+## Back up selected topics or the whole group
 
-1. Descarga el ZIP **Telegram-Downloader-v3.0.1.zip** desde [la última versión](https://github.com/jhon-a65/telegram-downloader/releases/latest) y descomprímelo en una carpeta permanente.
-2. Abre `brave://extensions` y activa **Modo de desarrollador**.
-3. Pulsa **Cargar descomprimida** y selecciona la carpeta que contiene `manifest.json`.
-4. Abre [Telegram Web K](https://web.telegram.org/k/), inicia tu sesión y recarga la pestaña.
-5. Pulsa **Descargar**, en la esquina inferior derecha.
+1. Open the group in Telegram Web K.
+2. Open **Backup** and click **Load group topics**.
+3. Choose **All topics** or select specific ones. General is included.
+4. Select videos, photos, audio, documents and/or messages with captions.
+5. Optionally expand **Dates & speed**. Date filters use your computer's time zone.
+6. Click **Choose folder & create backup**. An external drive works too.
 
-En Chrome se usa `chrome://extensions`. No necesitas instalar Node, Python ni otro programa para utilizar la extensión.
+The extension creates a group folder containing a folder for each topic:
 
-Para actualizar una instalación anterior, detén las descargas, reemplaza sus archivos **en la misma carpeta**, recarga la extensión y pulsa F5 en Telegram. Las tandas y la selección conservan sus claves de almacenamiento. La nueva versión no usa el antiguo subidor automático ni espera sus archivos de control.
-
-## Crear una copia por temas
-
-1. Abre el grupo en Telegram Web K.
-2. En la extensión, entra en **Respaldo** y pulsa **Cargar temas del grupo**.
-3. Elige todos los temas o marca algunos. General también está incluido.
-4. Marca qué quieres conservar: vídeos, imágenes, audios, documentos y/o mensajes. Los mensajes incluyen las descripciones.
-5. Opcionalmente abre **Fechas y velocidad**. Las fechas usan el horario de la PC.
-6. Pulsa **Elegir carpeta y crear copia**. Puedes elegir un disco externo.
-
-La copia crea una carpeta del grupo con su nombre y sus identificadores. Dentro, cada tema tiene su carpeta y las subcarpetas correspondientes:
-
-| Carpeta o archivo | Contenido |
+| Folder or file | Contents |
 | --- | --- |
-| `000101 - Clases/Vídeos/` | Vídeos con fecha, mensaje e identificador estables. |
-| `000101 - Clases/Imágenes/` | La mayor versión de foto descargable que ofrece Telegram. |
-| `000101 - Clases/Audios/` | Audios y notas de voz. |
-| `000101 - Clases/Documentos/` | Archivos de otros tipos. |
-| `000101 - Clases/Mensajes/` | Mensajes por bloques: texto legible y JSON. |
-| `000101 - Clases/Tema.json` | Identidad y título actual del tema. |
-| `Telegram-respaldo.json` | Registro del respaldo, archivos previstos y completos. |
-| `Ultimo-resumen.json` | Resultado del último recorrido y sus avisos. |
+| `000101 - Classes/Vídeos/` | Videos with stable date, message and file identifiers. |
+| `000101 - Classes/Imágenes/` | The largest downloadable photo representation Telegram offers. |
+| `000101 - Classes/Audios/` | Audio files and voice notes. |
+| `000101 - Classes/Documentos/` | Other document types. |
+| `000101 - Classes/Mensajes/` | Messages in readable text and JSON blocks. |
+| `000101 - Classes/Tema.json` | Topic identity and its current title. |
+| `Telegram-respaldo.json` | Backup plan and completed-file record. |
+| `Ultimo-resumen.json` | Latest scan results and warnings. |
 
-Los nombres empiezan por la fecha UTC para conservar un orden estable entre equipos. Los identificadores distinguen archivos con el mismo nombre. Las carpetas existentes se conservan aunque cambie el título del grupo o del tema; su nuevo título queda en el registro.
+Folder and record names stay stable across interface languages so a language change does not create another copy. File names start with UTC dates for consistent ordering across computers. Stable identifiers distinguish messages and files with identical original names. Existing folder paths remain stable after a group or topic is renamed; the new title is recorded in the metadata.
 
-### Continuar y actualizar
+### Resume and update
 
-Puedes pausar o detener la copia. Después usa **Continuar / actualizar esta copia**. Tras cerrar el navegador, vuelve a elegir la carpeta del respaldo o la carpeta padre donde se creó.
+Use **Continue / update this backup**. After closing the browser, select the same backup folder or its parent folder again.
 
-Solo se confirma un archivo después de cerrarlo completamente y guardar su progreso. Si interrumpes un archivo, ese archivo se descarga otra vez desde el principio; los terminados se comprueban y se omiten. Si falta un archivo o su tamaño no coincide, se intenta recuperar.
+A file is marked complete only after its writer closes and progress is saved. Completed files are checked for existence and expected size before being skipped. Missing files or files with a different size are downloaded again. An interrupted file restarts from byte zero; this is file-level continuation, not cross-session continuation of a partial file.
 
-La actualización vuelve a consultar el historial y descarga los archivos que falten. Si elegiste todos los temas, también incorpora temas nuevos. Las copias anteriores no se borran porque desaparezca un mensaje de Telegram. Los mensajes editados se actualizan en los bloques de texto y JSON.
+Each update scans history again and downloads what's missing. **All topics** also picks up newly created topics. Local copies and previously exported messages are kept when posts disappear from Telegram; newly fetched edits update the corresponding message blocks.
 
-Conserva `Telegram-respaldo.json` y la estructura de carpetas. Es un registro distinto del `Telegram-progreso.json` de las tandas anteriores. El respaldo comprueba los archivos de su propia carpeta; no presupone que un vídeo descargado en otra ubicación ya está incluido.
+Keep `Telegram-respaldo.json` and the folder structure intact. This backup record is separate from the `Telegram-progreso.json` used by video batches. A file downloaded elsewhere is not automatically treated as part of this backup. Existence and size checks are not cryptographic content verification.
 
-### Alcance
+### What a backup includes
 
-La copia incluye el historial accesible para tu cuenta y los adjuntos compatibles. Los mensajes se conservan como texto y datos; no hay un visor HTML ni una función para reconstruir un grupo idéntico dentro de Telegram. Los adjuntos temporales o no compatibles se notifican en los avisos. No se recuperan mensajes borrados antes del respaldo.
+Backups include history accessible to your account and supported attachments. Messages are exported as text and data, not as a browsable HTML archive or a Telegram group that can be restored exactly. Unsupported or temporary attachments are reported. Messages deleted before a backup cannot be recovered.
 
-Mantén abiertos la PC, Brave/Chrome y la pestaña de Telegram mientras trabaja. Al apagar o suspender la PC el trabajo se interrumpe, y puede continuar al volver. Los respaldos conservan los archivos en el disco y no realizan subidas ni borrados automáticos.
+The extension stores files on your disk. It does not upload them or delete them automatically. Sleeping or shutting down the computer interrupts the job; you can continue when you return.
 
-## Descargas optimizadas, también con Telegram Premium
+## Parallel downloads and Telegram Premium
 
-El motor mantiene varias partes de un mismo archivo en descarga a la vez para reducir las esperas entre peticiones y aprovechar mejor la conexión. Los perfiles permiten ajustar la velocidad a tu equipo:
+The download engine keeps multiple chunks of one file in flight to reduce waiting between requests and use your connection more effectively:
 
-| Perfil | Partes simultáneas por archivo |
+| Profile | Concurrent chunks per file |
 | --- | --- |
-| Conservadora | 1 |
-| Equilibrada | 4 |
-| Rápida | 8 |
-| Intensiva | 16 |
+| Conservative | 1 |
+| Balanced | 4 |
+| Fast | 8 |
+| Intensive | 16 |
 
-**¿Tienes Premium? La extensión utiliza tu sesión de Telegram y puede aprovechar la ausencia del límite de velocidad de descarga asociado a las cuentas gratuitas.** Prueba Rápida o Intensiva y elige el perfil que mejor rinda en tu conexión. También funciona con cuentas gratuitas, respetando las esperas del servidor.
+**Premium users use their existing Telegram session and can benefit from Telegram removing the download-speed limit associated with free accounts.** Try Fast or Intensive and choose what works best for your connection. Free accounts work too, respecting Telegram's requested waits.
 
-Las partes se escriben en orden y directamente al disco, con una ventana de memoria acotada: no hace falta reunir un vídeo grande entero en la RAM para guardarlo. Los perfiles se aplican a Mi cola, Grupo / tema y Respaldo.
+These profiles apply to **My queue, Group / topic and Backup**. Chunks are written to disk in order within a bounded memory window, so a large video does not need to fit entirely in RAM. Actual speed also depends on Telegram, your connection, computer and disk; 16 chunks are not guaranteed to outperform 8.
 
-La velocidad efectiva depende de Telegram, la conexión, la PC y el disco; no se promete una velocidad fija ni que 16 partes siempre rindan más que 8. Telegram explica el alcance de Premium en sus [preguntas frecuentes](https://telegram.org/faq_premium#q-is-it-guaranteed-that-my-download-speed-will-increase-after-subscribing) y recomienda peticiones concurrentes en su [documentación de optimización](https://core.telegram.org/api/optimisation).
+Telegram documents the scope of Premium in its [Premium FAQ](https://telegram.org/faq_premium#q-is-it-guaranteed-that-my-download-speed-will-increase-after-subscribing) and concurrent requests in its [optimization documentation](https://core.telegram.org/api/optimisation).
 
-## Privacidad y permisos
+## Privacy and permissions
 
-La extensión solicita únicamente `storage` y se ejecuta en `web.telegram.org`. Los mensajes del respaldo se escriben en la carpeta elegida, no en el almacenamiento de Chrome. La extensión no recopila telemetría, no tiene servidor, no pide credenciales ni claves de Telegram y no envía tu contenido al creador. PayPal solo se abre cuando pulsas el enlace de apoyo; donar es opcional y no habilita funciones adicionales.
+The only requested extension permission is **`storage`**, and content scripts run only on `web.telegram.org`. Backup messages are written to your chosen disk folder, not Chrome storage. The extension has no telemetry or backend server, does not request Telegram credentials or API keys, and does not send your content to the creator.
 
-Es una herramienta independiente, sin afiliación con Telegram. Las funciones de cola, tandas y respaldo requieren Web K y dependen de sus interfaces internas. La descarga individual mantiene compatibilidad con Web K y Web A. Una actualización de Telegram puede requerir ajustar el adaptador.
+PayPal opens only when you click the support link. Donations are optional and do not unlock features.
 
-## Desarrollo y pruebas
+This is an independent project, not affiliated with Telegram. Group features depend on Web K's internal interfaces, so a Telegram update may require an adapter update.
 
-Requiere Node.js 22 o posterior, solo para desarrollo:
+## Feedback, translations and development
+
+[Report a bug in English or Spanish](https://github.com/jhon-a65/telegram-downloader/issues/new/choose). Include the version, browser, Web K or Web A, steps and error text. Remove private content from screenshots and never attach session data or real backup records. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Node.js 22 or later is needed **only for development**:
 
 ```sh
 npm ci
+npm run build
 npm run check
 npm test
 ```
 
-Para cambiar el diseño, edita `panel.html` o `panel.css` y ejecuta `npm run build`. Los archivos compilados se incluyen en el proyecto y se verifican con `npm run check`.
+Edit `panel.html` / `panel.css` for the UI, and `translations/en.json` / `i18n-runtime.js` for panel translations. Build and include the generated `content.js`, `panel-styles.js` and `i18n.js`. Browser-managed extension metadata lives in `_locales/en` and `_locales/es`; it follows the browser's language, independently of the panel's selector.
 
-Las pruebas usan la interfaz real de la extensión, sesiones y disco simulados. Cubren separación por temas, medios, mensajes, interrupciones, actualización, nombres, permisos, paginación, cuentas y descargas por partes. No inician sesión ni envían mensajes a Telegram. El ensayo opcional `pruebas/browser.test.cjs` necesita Playwright y Chrome por separado; no forma parte de `npm test`.
+Tests exercise the extension UI with simulated Telegram and disk access. They cover topic separation, queues, batches, files, messages, interruptions, incremental updates, permissions, pagination, ordered chunks and language changes during a backup. They do not sign in to Telegram or send messages. GitHub Actions runs checks and tests on Node.js 22 and 24. The optional `pruebas/browser.test.cjs` requires Playwright and Chrome separately and is not included in `npm test`.
 
-GitHub Actions ejecuta las comprobaciones y pruebas en cada push y pull request. El enlace de apoyo también está configurado en `.github/FUNDING.yml`.
-
-Licencia MIT. Lee [LICENSE.txt](LICENSE.txt).
+MIT license — [LICENSE.txt](LICENSE.txt). [♡ Support the creator](https://paypal.me/jhonanthony229).

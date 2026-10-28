@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Telegram Downloader · Descargador de archivos"
+  },
+  "extensionDescription": {
+    "message": "Descarga grupos y temas de Telegram. Vídeos, fotos, audios y archivos en carpetas, con progreso y descargas paralelas para Premium."
+  },
+  "actionTitle": {
+    "message": "Telegram Downloader · Descargar archivos de Telegram"
+  }
+}

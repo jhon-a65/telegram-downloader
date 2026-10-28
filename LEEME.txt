@@ -1,4 +1,4 @@
-TELEGRAM DOWNLOADER · DESCARGADOR DE ARCHIVOS — 3.0.1
+TELEGRAM DOWNLOADER · DESCARGADOR DE ARCHIVOS — 3.1.0
 
 Descarga grupos enteros o temas específicos sin guardar archivo por archivo.
 Vídeos, imágenes, audios, documentos y mensajes en carpetas ordenadas.
@@ -10,6 +10,11 @@ Creado en colaboración por Jhon Anthony y ChatGPT (Codex), una IA de OpenAI.
 Jhon propuso la idea, definió las funciones y probó las versiones en su navegador.
 La IA escribió y modificó el código siguiendo sus indicaciones, y realiza la publicación en GitHub con autorización expresa de Jhon.
 https://github.com/jhon-a65/telegram-downloader
+
+IDIOMA
+La interfaz detecta el idioma del navegador. Abre ⚙ Ajustes, arriba a la derecha, para elegir English o Español.
+Se conservan las colas, el progreso y las carpetas al cambiar de idioma.
+README.md y help.html están en inglés. README.es.md y ayuda.html contienen la guía en español.
 
 INSTALAR O ACTUALIZAR EN BRAVE
 1. Detén cualquier descarga de la versión anterior.
@@ -59,5 +64,5 @@ https://paypal.me/jhonanthony229
 No hay cuotas diarias ni funciones bloqueadas detrás de una donación.
 
 PROYECTO EN GITHUB
-README.md contiene la guía completa. El código, la licencia MIT, las pruebas y la configuración de GitHub Actions están incluidos.
+README.es.md contiene la guía completa en español. README.md está en inglés. El código, la licencia MIT, las pruebas y la configuración de GitHub Actions están incluidos.
 No hace falta instalar Node ni Python para usar la extensión.

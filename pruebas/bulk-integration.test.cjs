@@ -11,6 +11,7 @@ async function harness(count=62){
   const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
   const dom=new JSDOM('<!doctype html><html><head></head><body><div id="column-center"><div class="chat-info"><span class="peer-title">Grupo de prueba</span></div></div></body></html>',{url:'https://web.telegram.org/k/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
   const w=dom.window,storage={},docs=new Map(),allMessages=[],calls={history:[],parts:[],pickers:0,reloads:0,migrations:0,hydrates:0};
+  Object.defineProperty(w.navigator,'language',{value:'es-PE',configurable:true});
   const h={dom,w,storage,fixture,calls,errors,root:new FakeDirectory('Destino'),title:'Grupo de prueba',onRead:null,wrongPeer:false,migrationWait:null};
   w.Blob=Blob;w.AbortController=AbortController;w.AbortSignal=AbortSignal;w.MediaSource=class{};
   w.URL.createObjectURL=()=>`blob:https://web.telegram.org/test-${Math.random()}`;w.URL.revokeObjectURL=()=>{};

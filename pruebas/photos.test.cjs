@@ -10,6 +10,7 @@ function setup(t,variant='k'){
   const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
   const dom=new JSDOM('<!doctype html><html><body><main></main></body></html>',{url:`https://web.telegram.org/${variant}/`,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
   const w=dom.window,d=w.document,objects=new Map(),states=[],results=[],saved=[],requests=[],observers=[];
+  Object.defineProperty(w.navigator,'language',{value:'es-PE',configurable:true});
   let serial=0;
   const NativeObserver=w.MutationObserver;w.MutationObserver=class extends NativeObserver{constructor(cb){super(cb);observers.push(this);}};
   w.Blob=Blob;w.AbortController=AbortController;w.AbortSignal=AbortSignal;

@@ -15,7 +15,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   const work = await fs.mkdtemp(path.join(os.tmpdir(),'tg-local-browser-'));
   const context = await chromium.launchPersistentContext(path.join(work,'profile'), {
     executablePath: process.env.CHROME_EXECUTABLE,
-    headless: true, acceptDownloads: true, viewport: {width: 1100, height: 900},
+    headless: true, acceptDownloads: true, locale: 'es-PE', viewport: {width: 1100, height: 900},
     args: ['--no-sandbox','--disable-dev-shm-usage','--disable-background-networking', `--disable-extensions-except=${extension}`, `--load-extension=${extension}`]
   });
   const errors = [], rangeRequests = [];

@@ -20,6 +20,7 @@ function harness(t, options = {}) {
     url:'https://web.telegram.org/k/', runScripts:'outside-only', pretendToBeVisual:true, virtualConsole:vc
   });
   const w = dom.window, fixture = fs.readFileSync(path.join(__dirname, 'fixture.mp4'));
+  Object.defineProperty(w.navigator,'language',{value:options.browserLanguage || 'es-PE',configurable:true});
   const h = {w, dom, errors, fixture, state:null, states:[], storage:options.storage || {}, root:options.root || new FakeDirectory('Destino'),
     docs:new Map(), messages:[], title:'Grupo de prueba', titles:new Map([[101,'Clases de C'],[202,'Python'],[1,'General']]),
     calls:{topics:[], groups:[], parts:[], metadata:[], migrations:0, pickers:0, reloads:0}, pageMaximum:50,
@@ -31,7 +32,7 @@ function harness(t, options = {}) {
   w.performance.getEntriesByType = () => [];
   w.fetch = async () => { throw new Error('La descarga por temas no debe usar fetch.'); };
   w.chrome = {runtime:{onMessage:{addListener() {}}, sendMessage:async () => {}},
-    storage:{local:{get:async key => ({[key]:h.storage[key]}), set:async values => Object.assign(h.storage, values)}}};
+    storage:{local:{get:async key => {const value=h.storage[key];if(key==='tgLocalLanguage'&&options.languageRead)await options.languageRead;return {[key]:value};}, set:async values => Object.assign(h.storage, values)}}};
   let serial = 0;
   function add(topic, filter, style = 'top') {
     const n = ++serial, id = 200000 - n;

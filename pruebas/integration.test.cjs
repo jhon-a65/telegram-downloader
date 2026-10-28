@@ -19,6 +19,7 @@ async function until(fn) { for(let i=0;i<300;i++){if(fn())return;await pause(10)
     url:'https://web.telegram.org/k/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole
   });
   const w = dom.window;
+  Object.defineProperty(w.navigator,'language',{value:'es-PE',configurable:true});
   const storage={},runtimeListeners=[],blobMap=new Map(),saved=[],requests=[],performanceEntries=[];
   let serial=0,slow=false;
   w.Blob=Blob;w.AbortSignal=AbortSignal;w.AbortController=AbortController;

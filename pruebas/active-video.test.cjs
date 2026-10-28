@@ -13,6 +13,7 @@ function setup(t, variant = 'k') {
     url: `https://web.telegram.org/${variant}/`, runScripts: 'outside-only', pretendToBeVisual: true, virtualConsole: new VirtualConsole()
   });
   const w = dom.window, d = w.document, states = [], boxes = new WeakMap(), media = new WeakMap(), observers = [];
+  Object.defineProperty(w.navigator,'language',{value:'es-PE',configurable:true});
   const NativeObserver = w.MutationObserver;
   w.MutationObserver = class extends NativeObserver {
     constructor(callback) { super(callback); observers.push(this); }
@@ -163,6 +164,7 @@ test('Un visor cerrado no deja vídeos marcados aunque todavía existan en el DO
 test('La lista muestra una sola etiqueta durante 40 cambios seguidos y conserva la identidad correcta', t => {
   const h = setup(t), old = h.add('primero'), current = h.add('segundo');
   h.w.chrome = {runtime: {onMessage: {addListener() {}}, sendMessage: async () => {}}, storage: {local: {get: async () => ({}), set: async () => {}}}};
+  h.w.eval(fs.readFileSync(path.join(base, 'i18n.js'), 'utf8'));
   h.w.eval(fs.readFileSync(path.join(base, 'content.js'), 'utf8'));
   const root = h.d.getElementById('tg-local-video-tools').shadowRoot;
   root.querySelector('.launch').click();

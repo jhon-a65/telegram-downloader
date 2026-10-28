@@ -1,0 +1,50 @@
+TELEGRAM · ARCHIVO LOCAL — 3.0.0
+
+INSTALAR O ACTUALIZAR EN BRAVE
+1. Detén cualquier descarga de la versión anterior.
+2. Descomprime este ZIP. Para actualizar, reemplaza los archivos de la misma carpeta que ya usaba la extensión.
+3. Abre brave://extensions y activa Modo de desarrollador.
+4. Si es nueva: Cargar descomprimida y elige la carpeta con manifest.json.
+   Si ya estaba instalada: pulsa Recargar en la extensión.
+5. Recarga Telegram con F5 y pulsa Guardar, en la esquina inferior derecha.
+En Chrome se usa chrome://extensions.
+
+CUATRO SECCIONES
+AZUL — Vídeo abierto: guarda lo que estás viendo o añádelo a Mi cola.
+VIOLETA — Mi cola: guarda solo tu selección, en tandas de 10, 20, 40, 60, 100 o todos.
+VERDE — Grupo / tema: vídeos por tandas, con orden y punto de inicio.
+ÁMBAR — Respaldo: copia del grupo organizada por temas.
+La opción Imagen del pie conserva el guardado individual desde los datos locales del navegador.
+
+RESPALDO POR TEMAS
+Abre el grupo en Telegram Web K, entra en Respaldo y pulsa Cargar temas.
+Elige todos o marca algunos. Selecciona vídeos, imágenes, audios, documentos y/o mensajes.
+Puedes limitar las fechas en el desplegable Fechas y velocidad. Se usa el horario de tu PC.
+Pulsa Elegir carpeta y crear copia. Se crea una carpeta de grupo y dentro una por tema.
+Los mensajes se conservan como texto y JSON. Los archivos se ordenan por fecha y tienen identificadores estables.
+
+PARA CONTINUAR O ACTUALIZAR
+Usa Continuar / actualizar esta copia. Después de cerrar el navegador, elige otra vez la misma carpeta o su carpeta padre.
+Los archivos terminados se conservan. El archivo interrumpido vuelve a empezar desde el principio.
+Se añaden los archivos que faltan; si elegiste todos los temas, también se incorporan temas nuevos.
+No se borran las copias antiguas porque un mensaje desaparezca de Telegram.
+Conserva Telegram-respaldo.json y la estructura de carpetas. Si falta un archivo o tiene tamaño incorrecto, se intenta recuperar.
+El respaldo es independiente de las tandas anteriores: los vídeos guardados en otra carpeta no cuentan como parte de esta copia.
+
+VELOCIDAD
+Rápida usa hasta 8 partes a la vez e Intensiva hasta 16 del mismo archivo.
+Se mantiene una ventana acotada de memoria y se escribe en orden.
+Funciona con tu cuenta habitual, incluida Premium. La velocidad depende de Telegram, la conexión y el disco.
+
+Mantén abiertos la PC, el navegador y Telegram mientras descarga.
+Esta versión conserva los archivos y ya no usa el subidor automático.
+Solo puede copiar el historial accesible y los adjuntos compatibles; los demás aparecen en los avisos.
+No recupera mensajes ya borrados ni reconstruye un grupo idéntico en Telegram.
+
+APOYO OPCIONAL
+https://paypal.me/jhonanthony229
+No hay cuotas diarias ni funciones bloqueadas detrás de una donación.
+
+PROYECTO PARA GITHUB
+README.md contiene la guía completa. El código, la licencia MIT, las pruebas y la configuración de GitHub Actions están incluidos.
+No hace falta instalar Node ni Python para usar la extensión.

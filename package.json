@@ -1,0 +1,14 @@
+{
+  "name": "telegram-archivo-local",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Extensión local para guardar vídeos y respaldar grupos por temas en Telegram Web K.",
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "node scripts/check.cjs",
+    "test": "node scripts/test.cjs"
+  },
+  "devDependencies": {"jsdom": "26.1.0"}
+}

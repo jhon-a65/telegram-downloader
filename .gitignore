@@ -1,0 +1,15 @@
+node_modules/
+*.zip
+.DS_Store
+Thumbs.db
+test-results/
+playwright-report/
+.env
+.env.*
+*.session
+*.session-journal
+**/Telegram-progreso.json
+**/Telegram-respaldo.json
+**/Ultimo-resumen.json
+**/Tema.json
+/Respaldo_*/

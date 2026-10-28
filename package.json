@@ -1,8 +1,8 @@
 {
-  "name": "telegram-archivo-local",
-  "version": "3.0.0",
+  "name": "telegram-downloader",
+  "version": "3.0.1",
   "private": true,
-  "description": "Extensión local para guardar vídeos y respaldar grupos por temas en Telegram Web K.",
+  "description": "Telegram Downloader para Brave y Chrome: descargas de grupos y temas, progreso sin duplicados y partes en paralelo para cuentas gratuitas y Premium.",
   "license": "MIT",
   "engines": {"node": ">=22"},
   "scripts": {

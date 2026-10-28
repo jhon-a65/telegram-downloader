@@ -1,8 +1,29 @@
-# Telegram · Archivo local
+# Telegram Downloader · Descargador de archivos de Telegram
 
-Extensión para **Brave y Chrome de escritorio**. Guarda vídeos, prepara una cola con tu selección y crea copias de grupos organizadas en carpetas por tema.
+**Descarga un grupo completo o solo los temas que te interesan, sin guardar archivo por archivo.** Vídeos, imágenes, audios, documentos y mensajes: todo en tu PC, organizado en carpetas y con memoria de lo que ya descargaste.
 
-**[♡ Apoya al creador en PayPal](https://paypal.me/jhonanthony229)**
+Una extensión **gratuita y de código abierto para Brave y Chrome de escritorio**, con colas, tandas y descargas por partes en paralelo para aprovechar mejor tu conexión, también con **Telegram Premium**. Sin cuotas diarias de la extensión ni funciones de pago.
+
+**[↓ Descargar e instalar](https://github.com/jhon-a65/telegram-downloader/releases/latest)** · **[Cómo usarla](#empezar-en-brave-o-chrome)** · **[♡ Apoya al creador](https://paypal.me/jhonanthony229)**
+
+> **Creado por Jhon Anthony y ChatGPT (Codex), una IA de OpenAI, en colaboración.** Jhon propuso la idea, definió las funciones y probó las versiones en su navegador. La IA escribió y modificó el código a partir de sus indicaciones. La publicación en GitHub y esta actualización las realiza la IA con autorización expresa de Jhon, titular de esta cuenta. Compartimos el proyecto con esta autoría visible desde el principio.
+
+## Menos clics. Tus archivos en orden.
+
+| Lo que quieres hacer | Lo que hace Telegram Downloader |
+| --- | --- |
+| Descargar un grupo entero | Recorre el historial accesible y guarda los tipos de archivo que elijas, sin abrir cada publicación. |
+| Descargar temas específicos | Elige uno, varios o todos los temas, incluido General. Cada tema tiene su propia carpeta. |
+| Evitar descargas repetidas | Guarda un registro de progreso. Al continuar en la misma carpeta, comprueba y omite los archivos completos de esa copia. |
+| Descargar hoy y seguir otro día | Pausa o detén la descarga y continúa con los archivos pendientes, incluso después de cerrar el navegador. |
+| Actualizar tu colección | Añade los archivos que falten y, si elegiste todos los temas, incorpora los nuevos sin borrar tus copias anteriores. |
+| Elegir vídeos mientras los ves | Añádelos a Mi cola y descárgalos automáticamente en tandas de 10, 20, 40, 60, 100 o todos. |
+| Aprovechar una conexión rápida y Premium | Selecciona hasta 16 partes simultáneas por archivo, con escritura directa al disco y memoria acotada. |
+| Encontrar después lo que guardaste | Carpetas por tema y tipo, nombres por fecha e identificadores estables que distinguen archivos con nombres iguales. |
+
+**Configura qué guardar, elige una carpeta y deja que la descarga avance sola.** No necesitas pulsar Descargar en cada archivo. El primer uso requiere instalar la extensión, abrir Telegram Web K y elegir el contenido y la carpeta; a partir de ahí, el recorrido es automático.
+
+*English: Free Telegram Downloader extension for Chrome and Brave. Bulk-download accessible Telegram groups or selected forum topics, organize videos, photos, audio and documents by topic, resume with saved progress, and skip completed files in the same backup. Parallel chunk downloads support free and Telegram Premium accounts. Created collaboratively by Jhon Anthony and ChatGPT (Codex), and published by the AI with his permission.*
 
 ## Cuatro formas de guardar
 
@@ -15,13 +36,13 @@ Extensión para **Brave y Chrome de escritorio**. Guarda vídeos, prepara una co
 
 La opción pequeña «Imagen» del pie guarda la imagen abierta desde sus datos locales, sin capturas de pantalla ni recompresión.
 
-## Instalar en Brave
+## Empezar en Brave o Chrome
 
-1. Descarga y descomprime el proyecto en una carpeta permanente.
+1. Descarga el ZIP **Telegram-Downloader-v3.0.1.zip** desde [la última versión](https://github.com/jhon-a65/telegram-downloader/releases/latest) y descomprímelo en una carpeta permanente.
 2. Abre `brave://extensions` y activa **Modo de desarrollador**.
 3. Pulsa **Cargar descomprimida** y selecciona la carpeta que contiene `manifest.json`.
 4. Abre [Telegram Web K](https://web.telegram.org/k/), inicia tu sesión y recarga la pestaña.
-5. Pulsa **Guardar**, en la esquina inferior derecha.
+5. Pulsa **Descargar**, en la esquina inferior derecha.
 
 En Chrome se usa `chrome://extensions`. No necesitas instalar Node, Python ni otro programa para utilizar la extensión.
 
@@ -67,9 +88,22 @@ La copia incluye el historial accesible para tu cuenta y los adjuntos compatible
 
 Mantén abiertos la PC, Brave/Chrome y la pestaña de Telegram mientras trabaja. Al apagar o suspender la PC el trabajo se interrumpe, y puede continuar al volver. Los respaldos conservan los archivos en el disco y no realizan subidas ni borrados automáticos.
 
-## Velocidad
+## Descargas optimizadas, también con Telegram Premium
 
-Conservadora usa 1 parte simultánea; Equilibrada 4; Rápida 8 e Intensiva 16. Se descarga un archivo cada vez, escribiendo sus partes en orden y con una ventana de memoria acotada. Premium se utiliza a través de tu sesión habitual; la velocidad real depende también de Telegram, tu conexión, la PC y el disco. Se respetan las esperas solicitadas por el servidor.
+El motor mantiene varias partes de un mismo archivo en descarga a la vez para reducir las esperas entre peticiones y aprovechar mejor la conexión. Los perfiles permiten ajustar la velocidad a tu equipo:
+
+| Perfil | Partes simultáneas por archivo |
+| --- | --- |
+| Conservadora | 1 |
+| Equilibrada | 4 |
+| Rápida | 8 |
+| Intensiva | 16 |
+
+**¿Tienes Premium? La extensión utiliza tu sesión de Telegram y puede aprovechar la ausencia del límite de velocidad de descarga asociado a las cuentas gratuitas.** Prueba Rápida o Intensiva y elige el perfil que mejor rinda en tu conexión. También funciona con cuentas gratuitas, respetando las esperas del servidor.
+
+Las partes se escriben en orden y directamente al disco, con una ventana de memoria acotada: no hace falta reunir un vídeo grande entero en la RAM para guardarlo. Los perfiles se aplican a Mi cola, Grupo / tema y Respaldo.
+
+La velocidad efectiva depende de Telegram, la conexión, la PC y el disco; no se promete una velocidad fija ni que 16 partes siempre rindan más que 8. Telegram explica el alcance de Premium en sus [preguntas frecuentes](https://telegram.org/faq_premium#q-is-it-guaranteed-that-my-download-speed-will-increase-after-subscribing) y recomienda peticiones concurrentes en su [documentación de optimización](https://core.telegram.org/api/optimisation).
 
 ## Privacidad y permisos
 

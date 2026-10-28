@@ -1,5 +1,13 @@
 # Cambios
 
+## 3.0.1
+
+- Nuevo nombre: Telegram Downloader · Descargador de archivos.
+- Presentación centrada en descargar grupos y temas, guardar el progreso y evitar repetir los archivos completos de una misma copia.
+- Guía de los perfiles de descarga paralela y de cómo aprovechar Telegram Premium.
+- Autoría conjunta de Jhon Anthony y ChatGPT (Codex) visible desde el inicio, con publicación por la IA autorizada por Jhon.
+- Título, ayuda y botón de acceso actualizados para que la función principal sea clara.
+
 ## 3.0.0
 
 - Respaldo de todos los temas o una selección, incluido General.

@@ -1,0 +1,52 @@
+name: Bug report / Reportar un fallo
+description: Tell us what went wrong. English and Spanish are welcome.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the problem in English or Spanish. / Puedes escribir en inglés o español.
+        Do not attach Telegram login codes, session data, private media or real backup records.
+        No adjuntes códigos de acceso, sesiones, archivos privados ni registros de respaldo reales.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version / Versión de la extensión
+      placeholder: "3.1.0"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system / Navegador y sistema operativo
+      placeholder: "Brave on Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: telegram
+    attributes:
+      label: Telegram Web
+      options:
+        - Web K
+        - Web A
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Interface language / Idioma de la interfaz
+      options:
+        - English
+        - Español
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result / Pasos y resultado esperado
+      description: What did you do, what happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message / Mensaje de error
+      description: Remove private content before sharing screenshots or text.

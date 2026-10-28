@@ -1,0 +1,23 @@
+VALIDACIÓN — TELEGRAM · ARCHIVO LOCAL 3.0.0
+
+208 pruebas de npm test: aprobadas, 0 fallidas, 0 omitidas.
+40 pruebas adicionales de interfaz e imagen tras el ajuste del diseño: aprobadas.
+Instalación reproducible de las dependencias de desarrollo: npm ci, correcta.
+Sintaxis, manifest, permisos, recursos y plantillas compiladas: correctos.
+
+Cobertura del nuevo respaldo:
+- Todos los temas, selección y General con separación de carpetas.
+- Vídeos, fotos, audios, documentos, mensajes en TXT y JSON.
+- Fechas, nombres repetidos, títulos renombrados y orden estable.
+- Parar a mitad, reabrir y continuar; recuperar archivos ausentes o incompletos.
+- Actualización incremental de medios y nuevos temas; conservar lo borrado en origen.
+- Paginación corta o repetida, mensajes ajenos y referencias caducadas.
+- Partes paralelas de un mismo archivo con bytes comprobados y renovación compartida.
+- Cambios de grupo y cuenta, revocación de permisos y fallo de disco.
+- Selección de temas persistida, cuatro pestañas, enlace de apoyo y ausencia del subidor.
+- Regresión de tandas, cola manual, punto de inicio, vídeo visible e imagen local.
+
+Las pruebas usan la interfaz real con Telegram y disco simulados.
+No se ha probado esta versión con la sesión real de Telegram del usuario ni en su Brave.
+El ensayo opcional de Chrome/Playwright no se ejecutó.
+GitHub Actions está configurado; su ejecución remota dependerá de la publicación.

@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Telegram Downloader · File Downloader"
+  },
+  "extensionDescription": {
+    "message": "Download Telegram groups and topics. Organized files, saved progress, English/Spanish UI and parallel downloads for Premium."
+  },
+  "actionTitle": {
+    "message": "Telegram Downloader · Download files from Telegram"
+  }
+}

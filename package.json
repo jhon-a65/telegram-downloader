@@ -1,14 +1,18 @@
 {
   "name": "telegram-downloader",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "private": true,
-  "description": "Telegram Downloader para Brave y Chrome: descargas de grupos y temas, progreso sin duplicados y partes en paralelo para cuentas gratuitas y Premium.",
+  "description": "Free Telegram Downloader for Chrome and Brave: bulk downloads, topic backups, saved progress and parallel chunks. English and Spanish UI.",
   "license": "MIT",
-  "engines": {"node": ">=22"},
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node scripts/build.cjs",
     "check": "node scripts/check.cjs",
     "test": "node scripts/test.cjs"
   },
-  "devDependencies": {"jsdom": "26.1.0"}
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
 }

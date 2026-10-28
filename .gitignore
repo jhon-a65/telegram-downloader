@@ -4,6 +4,7 @@ node_modules/
 Thumbs.db
 test-results/
 playwright-report/
+preview-output/
 .env
 .env.*
 *.session

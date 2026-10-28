@@ -1,0 +1,56 @@
+TELEGRAM DOWNLOADER · FILE DOWNLOADER — 3.1.0
+
+English · Para español, abre LEEME.txt, README.es.md o ayuda.html.
+
+Download entire Telegram groups or selected topics, organized into folders.
+Saved progress lets you continue later and skip completed files in the same backup.
+Free and open source. No daily quota imposed by the extension.
+
+INSTALL IN BRAVE OR CHROME
+1. Extract this ZIP to a permanent folder.
+2. Open brave://extensions or chrome://extensions and enable Developer mode.
+3. Click Load unpacked. Select the folder that contains manifest.json.
+4. Open https://web.telegram.org/k/ and reload the tab.
+5. Click Download in the bottom-right corner.
+
+UPDATING AN EXISTING INSTALLATION
+Stop downloads. Replace files in the SAME installation folder, click Reload on the extension card and refresh Telegram.
+Keep your backup folders, Telegram-respaldo.json and Telegram-progreso.json.
+
+LANGUAGE
+The panel uses Spanish for Spanish-language browsers and English otherwise.
+Open the small Settings button at the top right to choose Browser default, English or Español.
+Your choice is saved. Switching languages preserves queues, selections, filenames and progress.
+
+CHOOSE A MODE
+BLUE — Open video: save the current video or add it to My queue.
+PURPLE — My queue: download your selection in batches of 10, 20, 40, 60, 100 or all.
+GREEN — Group / topic: download videos with batch limits, order and a starting point.
+AMBER — Backup: save the group in folders for each topic and file type.
+The small Photo option saves the open photo from local browser data.
+
+BACKUP AND CONTINUE
+Open the group in Web K, go to Backup and load its topics.
+Choose all or some topics, file types and optional dates, then select a folder.
+Use Continue / update this backup later and choose the same backup folder or its parent.
+Completed files are checked and skipped; an interrupted file restarts from the beginning.
+Files downloaded to unrelated folders are not automatically counted as part of this backup.
+Folder names stay stable across languages. Telegram's messages and topic titles are not translated.
+
+SPEED
+Fast uses up to 8 concurrent chunks; Intensive uses up to 16 chunks of one file.
+Chunks are written to disk in order, using bounded memory.
+Your existing free or Premium Telegram session is used. Speed also depends on Telegram, your connection and disk.
+
+Keep the computer, browser and Telegram tab open. The extension does not upload or automatically delete files.
+Backups include accessible history and supported attachments; review warnings for unsupported content.
+
+TRANSPARENT AUTHORSHIP
+Created collaboratively by Jhon Anthony and ChatGPT (Codex), an AI from OpenAI.
+Jhon proposed the idea, defined features and tested versions. The AI wrote and modified the code following his instructions.
+The AI publishes the project on GitHub with Jhon's explicit authorization.
+
+https://github.com/jhon-a65/telegram-downloader
+Optional support: https://paypal.me/jhonanthony229
+
+Full English guide: README.md or help.html. No Node.js or Python installation is needed to use the extension.

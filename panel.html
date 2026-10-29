@@ -18,10 +18,17 @@
     <button class="mode-backup" id="tg-tab-backup" role="tab" aria-selected="false" aria-controls="tg-view-backup" tabindex="-1"><span class="tab-icon" aria-hidden="true">▣</span><span>Respaldo</span></button>
   </nav>
   <div class="individual-view" id="tg-view-one" role="tabpanel" aria-labelledby="tg-tab-one">
-    <div class="view-heading"><div><h3>El vídeo que estás viendo</h3><p>Guárdalo ahora o añádelo a tu selección para descargarlo después.</p></div><span class="tiny-badge">INDIVIDUAL</span></div>
-    <div class="quick-actions"><button class="quick-add" disabled>+ Añadir vídeo abierto a Mi cola</button><button class="subtle go-queue">Ver cola →</button></div>
-    <div class="toolbar"><span class="count">Buscando vídeos…</span><div><button class="subtle clear" title="Quitar los vídeos que ya no están en pantalla">Limpiar</button><button class="subtle scan">↻ Buscar</button></div></div>
-    <div class="list"></div>
+    <div class="view-heading"><div><h3>El vídeo que estás viendo</h3><p>Guárdalo ahora o añádelo a la cola.</p></div></div>
+    <div class="current-video"><div class="current-info"><span class="current-label">VÍDEO ABIERTO</span><div class="current-name">Abre un vídeo en Telegram.</div><div class="current-meta">Solo se guarda el vídeo en pantalla.</div></div><button class="current-save" disabled>↓ Guardar</button></div>
+    <section class="quick-queue" aria-label="Seleccionar y descargar tu cola">
+      <div class="quick-actions"><button class="quick-add" disabled>+ Añadir a cola</button><button class="quick-start" disabled><span class="quick-start-label">Descargar cola</span><small class="quick-start-note">Elegir carpeta</small></button></div>
+      <div class="quick-options"><label for="quick-count">Tanda<select id="quick-count"><option value="10">10 vídeos</option><option value="20">20 vídeos</option><option value="40">40 vídeos</option><option value="60">60 vídeos</option><option value="100">100 vídeos</option><option value="all">Todos</option></select></label><button class="subtle go-queue">Ver cola →</button></div>
+      <div class="quick-summary" aria-live="polite">0 pendientes · 0 completados</div>
+      <div class="quick-message" hidden role="status" aria-live="polite"></div><div class="quick-current" hidden></div><progress class="quick-progress" max="100" hidden aria-label="Avance del vídeo de la cola"></progress>
+      <div class="quick-controls" hidden><button class="quick-pause" hidden>Pausar</button><button class="quick-resume" hidden>Reanudar</button><button class="quick-stop" hidden>Detener</button></div>
+      <button class="subtle quick-folder" hidden>Elegir otra carpeta</button>
+    </section>
+    <details class="detected-videos"><summary><span class="count">Buscando vídeos…</span></summary><div class="toolbar"><span class="detected-hint">Lista secundaria</span><div><button class="subtle clear" title="Quitar los vídeos que ya no están en pantalla">Limpiar</button><button class="subtle scan">↻ Buscar</button></div></div><div class="list"></div></details>
     <details class="advanced"><summary>Opciones de guardado</summary><div class="options"><label><input id="memory" type="checkbox">Usar solo los datos ya cargados</label><label><input id="disk" type="checkbox" checked>Elegir ubicación al guardar</label><p class="helper">Elegir ubicación permite guardar vídeos grandes sin reunir todo el archivo en memoria.</p></div></details>
     <div class="status" hidden aria-live="polite"><div class="status-title"></div><progress class="progress" max="100" aria-label="Avance de la descarga"></progress><div class="status-foot"><div class="detail"></div><button class="cancel" hidden>Cancelar</button></div></div>
   </div>
@@ -73,6 +80,6 @@
     <div class="backup-controls"><button class="backup-pause" hidden>Pausar</button><button class="backup-resume" hidden>Reanudar</button><button class="backup-stop" hidden>Detener</button></div><details class="backup-errors" hidden><summary>Revisar avisos y errores</summary><ul></ul></details>
   </div>
   <div class="photo-notice" hidden role="status" aria-live="polite"></div>
-  <footer class="footer"><span>v3.1.0 · Sin cuota diaria</span><button class="photo-save" type="button" aria-label="Guardar la imagen abierta" title="Guardar la imagen abierta desde los datos locales del navegador">↓ Imagen abierta</button><span><a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">Web K</a> · <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">Web A</a></span></footer>
+  <footer class="footer"><span>v3.2.0 · Sin cuota diaria</span><button class="photo-save" type="button" aria-label="Guardar la imagen abierta" title="Guardar la imagen abierta desde los datos locales del navegador">↓ Imagen abierta</button><span><a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">Web K</a> · <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">Web A</a></span></footer>
 </section>
 <div class="launcher-row"><a class="support" href="https://paypal.me/jhonanthony229" target="_blank" rel="noopener noreferrer" aria-label="Apoya al creador con una donación en PayPal"><span aria-hidden="true">♡</span> Apoya al creador</a><button class="launch" aria-expanded="false" aria-label="Abrir Telegram Downloader"><span aria-hidden="true">↓</span> Descargar <span class="number">0</span></button></div>

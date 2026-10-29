@@ -1,23 +1,22 @@
-VALIDACIÓN — TELEGRAM · ARCHIVO LOCAL 3.0.0
+VALIDATION / VALIDACIÓN — TELEGRAM DOWNLOADER 3.2.0
+29 October / octubre 2026
 
-208 pruebas de npm test: aprobadas, 0 fallidas, 0 omitidas.
-40 pruebas adicionales de interfaz e imagen tras el ajuste del diseño: aprobadas.
-Instalación reproducible de las dependencias de desarrollo: npm ci, correcta.
-Sintaxis, manifest, permisos, recursos y plantillas compiladas: correctos.
+226 automated tests passed; 0 failed, skipped or cancelled.
+226 pruebas automatizadas aprobadas; 0 fallidas, omitidas o canceladas.
+Syntax, permissions, resources, versions, translation placeholders and compiled templates: passed.
+Sintaxis, permisos, recursos, versiones, traducciones y plantillas compiladas: correctos.
 
-Cobertura del nuevo respaldo:
-- Todos los temas, selección y General con separación de carpetas.
-- Vídeos, fotos, audios, documentos, mensajes en TXT y JSON.
-- Fechas, nombres repetidos, títulos renombrados y orden estable.
-- Parar a mitad, reabrir y continuar; recuperar archivos ausentes o incompletos.
-- Actualización incremental de medios y nuevos temas; conservar lo borrado en origen.
-- Paginación corta o repetida, mensajes ajenos y referencias caducadas.
-- Partes paralelas de un mismo archivo con bytes comprobados y renovación compartida.
-- Cambios de grupo y cuenta, revocación de permisos y fallo de disco.
-- Selección de temas persistida, cuatro pestañas, enlace de apoyo y ausencia del subidor.
-- Regresión de tandas, cola manual, punto de inicio, vídeo visible e imagen local.
+New compact flow / Nuevo flujo compacto:
+- Select only the open videos chosen by the user and download them from the main screen.
+- Enforce the batch size and continue with pending files in the same folder.
+- Pause, resume and stop from the main screen without losing completed files.
+- Synchronize and persist both batch selectors.
+- Switch English/Spanish during a queue download without new requests, changed names or resets.
+- Detect Spanish browser locales; use English for other locales; save a manual override.
+- Direct save uses the unique on-screen identity; ambiguous identities disable the button.
 
-Las pruebas usan la interfaz real con Telegram y disco simulados.
-No se ha probado esta versión con la sesión real de Telegram del usuario ni en su Brave.
-El ensayo opcional de Chrome/Playwright no se ejecutó.
-GitHub Actions está configurado; su ejecución remota dependerá de la publicación.
+Full regression includes queues, topics, backups, images, ordered parallel chunks and incremental updates.
+The UI runs with simulated Telegram and disk access; no real Telegram session or user files are used.
+The optional real-browser Playwright test was not run. Static previews use explicitly labeled sample data.
+Las pruebas usan Telegram y disco simulados. No se probó esta edición con la sesión real del usuario.
+Las vistas de documentación son ilustraciones con datos de ejemplo.

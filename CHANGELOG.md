@@ -1,4 +1,17 @@
-# Changelog / Cambios
+# Changes / Cambios
+
+## 3.2.0 · Compact bilingual panel
+
+- 340 px panel (previously 510 px), direct current-video save and queue downloads from the main screen.
+- Batch, folder, progress and pause controls beside the selection; compact detected-items list.
+- Browser language detection with English fallback and saved English/Spanish selection.
+
+### Español
+
+- Panel de 340 px, guardado del vídeo abierto y descarga de cola desde la pantalla principal.
+- Tanda, carpeta, avance y pausa junto a la selección; lista de detectados pequeña.
+- Detección del navegador, inglés como alternativa y selección de español/inglés guardada.
+
 
 ## 3.1.0
 

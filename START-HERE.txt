@@ -1,4 +1,4 @@
-TELEGRAM DOWNLOADER · FILE DOWNLOADER — 3.1.0
+TELEGRAM DOWNLOADER · FILE DOWNLOADER — 3.2.0
 
 English · Para español, abre LEEME.txt, README.es.md o ayuda.html.
 
@@ -23,7 +23,7 @@ Open the small Settings button at the top right to choose Browser default, Engli
 Your choice is saved. Switching languages preserves queues, selections, filenames and progress.
 
 CHOOSE A MODE
-BLUE — Open video: save the current video or add it to My queue.
+BLUE — Open video: save the current video, add it to your queue and download the queue from the same screen.
 PURPLE — My queue: download your selection in batches of 10, 20, 40, 60, 100 or all.
 GREEN — Group / topic: download videos with batch limits, order and a starting point.
 AMBER — Backup: save the group in folders for each topic and file type.
@@ -54,3 +54,9 @@ https://github.com/jhon-a65/telegram-downloader
 Optional support: https://paypal.me/jhonanthony229
 
 Full English guide: README.md or help.html. No Node.js or Python installation is needed to use the extension.
+
+COMPACT PANEL
+The panel is 340 px wide. In Open video, Add to queue and Download queue are side by side.
+Select 10, 20, 40, 60, 100 or All, then choose a folder. Next batch uses the same folder.
+Pause, resume and stop from that screen. My queue is for reviewing the selection and speed.
+Other detected items stay in a small collapsed list.

@@ -19,11 +19,17 @@ Free and open source. Selected video queues, configurable batches and parallel c
 | Skip completed downloads | Saves a progress record. When you continue in the same backup folder, completed files are checked and skipped. |
 | Continue another day | Pause or stop, close the browser and come back to pending files. An interrupted file restarts from the beginning. |
 | Keep a backup up to date | Adds missing files and, when All topics is selected, newly created topics. Existing local copies are kept. |
-| Pick videos while watching | Add them to My queue, then download batches of 10, 20, 40, 60, 100 or all selected videos. |
+| Pick videos while watching | Add them to the queue and download from the same screen in batches of 10, 20, 40, 60, 100 or all selected videos. |
 | Use a fast connection and Premium | Choose up to 16 simultaneous chunks per file, with ordered writes directly to disk and bounded memory use. |
 | Find files later | Topic and file-type folders, date-based names and stable identifiers distinguish files with the same original name. |
 
 **Choose what to save, select a folder and let the download run.** After the initial setup, you don't need to click Download for each file. Keep the computer, browser and Telegram tab open while it works.
+
+## Compact panel, more room for your videos
+
+The panel is **340 px wide instead of 510 px**, leaving more space to watch Telegram videos. **Add to queue** and **Download queue** sit side by side in **Open video**. Choose a batch of 10, 20, 40, 60, 100 or **All**, pick a folder and follow progress without switching tabs. After a batch, **Next batch** continues with pending videos in the same folder. Pause, resume, stop or choose another folder from the same screen.
+
+The video on screen has its own **Save** button. Other detected items stay in a small collapsed list; **My queue** remains available to review or remove selected videos and set download speed.
 
 ## See the workflow
 
@@ -43,7 +49,7 @@ Buttons, instructions, progress messages and the extension's own errors change l
 
 ## Install in Brave or Chrome
 
-1. Download **Telegram-Downloader-v3.1.0.zip** from [the latest release](https://github.com/jhon-a65/telegram-downloader/releases/latest). Extract it to a permanent folder.
+1. Download **Telegram-Downloader-v3.2.0.zip** from [the latest release](https://github.com/jhon-a65/telegram-downloader/releases/latest). Extract it to a permanent folder.
 2. Open `brave://extensions` or `chrome://extensions` and turn on **Developer mode**.
 3. Click **Load unpacked** and select the extracted folder that contains `manifest.json`.
 4. Open [Telegram Web K](https://web.telegram.org/k/), sign in using Telegram and reload the tab.
@@ -57,7 +63,7 @@ You don't need Node.js, Python, a Telegram bot or API credentials to use the ext
 
 | Tab | Use it for |
 | --- | --- |
-| Open video · blue | Save the video you are watching or add it to My queue. |
+| Open video · blue | Save the open video, add it to your queue or download the selected queue from the same screen. |
 | My queue · purple | Download only your selected videos, in selection order, with configurable batches. |
 | Group / topic · green | Download videos from the open topic or group, with a batch count, order and starting video. |
 | Backup · amber | Create or update a group copy organized into topic and file-type folders. |

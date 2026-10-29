@@ -27,6 +27,12 @@ Una extensión **gratuita y de código abierto para Brave y Chrome de escritorio
 
 *English: Free Telegram Downloader extension for Chrome and Brave. Bulk-download accessible Telegram groups or selected forum topics, organize videos, photos, audio and documents by topic, resume with saved progress, and skip completed files in the same backup. Parallel chunk downloads support free and Telegram Premium accounts. Created collaboratively by Jhon Anthony and ChatGPT (Codex), and published by the AI with his permission.*
 
+## Panel compacto: más espacio para tus vídeos
+
+El panel mide **340 px en lugar de 510 px**. En **Vídeo abierto**, **Añadir a cola** y **Descargar cola** están uno al lado del otro. Elige una tanda de 10, 20, 40, 60, 100 o **Todos**, selecciona la carpeta y sigue el avance sin cambiar de sección. **Siguiente tanda** continúa con los pendientes en la misma carpeta. También puedes pausar, reanudar, detener o elegir otra carpeta desde allí.
+
+El vídeo en pantalla tiene su propio botón **Guardar**. Los demás elementos detectados quedan en un desplegable pequeño; **Mi cola** sigue disponible para revisar, quitar vídeos y ajustar la velocidad.
+
 ## Interfaz en español e inglés
 
 El panel detecta el idioma del navegador: español para navegadores en español e inglés para los demás. Pulsa **⚙ Ajustes**, arriba a la derecha, y elige **Del navegador**, **English** o **Español**. La elección queda guardada y se puede cambiar durante una descarga.
@@ -56,7 +62,7 @@ La opción pequeña «Imagen» del pie guarda la imagen abierta desde sus datos 
 
 ## Empezar en Brave o Chrome
 
-1. Descarga el ZIP **Telegram-Downloader-v3.1.0.zip** desde [la última versión](https://github.com/jhon-a65/telegram-downloader/releases/latest) y descomprímelo en una carpeta permanente.
+1. Descarga el ZIP **Telegram-Downloader-v3.2.0.zip** desde [la última versión](https://github.com/jhon-a65/telegram-downloader/releases/latest) y descomprímelo en una carpeta permanente.
 2. Abre `brave://extensions` y activa **Modo de desarrollador**.
 3. Pulsa **Cargar descomprimida** y selecciona la carpeta que contiene `manifest.json`.
 4. Abre [Telegram Web K](https://web.telegram.org/k/), inicia tu sesión y recarga la pestaña.

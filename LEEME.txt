@@ -1,4 +1,4 @@
-TELEGRAM DOWNLOADER · DESCARGADOR DE ARCHIVOS — 3.1.0
+TELEGRAM DOWNLOADER · DESCARGADOR DE ARCHIVOS — 3.2.0
 
 Descarga grupos enteros o temas específicos sin guardar archivo por archivo.
 Vídeos, imágenes, audios, documentos y mensajes en carpetas ordenadas.
@@ -26,7 +26,7 @@ INSTALAR O ACTUALIZAR EN BRAVE
 En Chrome se usa chrome://extensions.
 
 CUATRO SECCIONES
-AZUL — Vídeo abierto: guarda lo que estás viendo o añádelo a Mi cola.
+AZUL — Vídeo abierto: guarda el vídeo o añade y descarga tu cola desde la misma pantalla.
 VIOLETA — Mi cola: guarda solo tu selección, en tandas de 10, 20, 40, 60, 100 o todos.
 VERDE — Grupo / tema: vídeos por tandas, con orden y punto de inicio.
 ÁMBAR — Respaldo: copia del grupo organizada por temas.
@@ -66,3 +66,10 @@ No hay cuotas diarias ni funciones bloqueadas detrás de una donación.
 PROYECTO EN GITHUB
 README.es.md contiene la guía completa en español. README.md está en inglés. El código, la licencia MIT, las pruebas y la configuración de GitHub Actions están incluidos.
 No hace falta instalar Node ni Python para usar la extensión.
+
+PANEL COMPACTO
+Panel de 340 px. En Vídeo abierto, Añadir a cola y Descargar cola están juntos.
+Elige 10, 20, 40, 60, 100 o Todos y después selecciona la carpeta.
+Siguiente tanda usa la misma carpeta. Puedes pausar, reanudar y detener desde allí.
+Mi cola sirve para revisar la selección y ajustar la velocidad.
+Los demás elementos detectados quedan en un desplegable pequeño.

@@ -1,6 +1,6 @@
 {
   "name": "telegram-downloader",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "private": true,
   "description": "Free Telegram Downloader for Chrome and Brave: bulk downloads, topic backups, saved progress and parallel chunks. English and Spanish UI.",
   "license": "MIT",
